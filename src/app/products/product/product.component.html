@@ -1,0 +1,78 @@
+<div class="main-layout">
+<div class="container">
+
+
+<ng-select 
+[items]="products" 
+bindLabel="text" 
+bindValue="value" 
+placeholder="Select or add new product"
+[(ngModel)]="selectedProduct"
+[searchable]="false"
+loadingText="Loading "
+[searchable]="false"
+
+>
+<ng-template ng-header-tmp>
+  <input
+    class="form-control form-control-sm mb-2"
+    type="text"
+  />
+  <div type="button" class="mb-2">
+    + Add new Product
+  </div>
+</ng-template>
+
+<ng-template ng-loadingspinner-tmp>
+  <div class="input-loader"></div>
+</ng-template>
+
+</ng-select>
+
+    
+    <!-- <div class="card-body">
+        <form [formGroup]="productFrom"
+        (ngSubmit)="save()"
+        >
+            <select class="mb-5">
+                <option></option>
+            </select>
+
+            
+            <div class="formGroup row mb-2">
+              <label for="productName" class="col-md-2 col-form-label">Product Name</label>
+              <div class="col-md-8">
+                <input type="text" 
+                id="productName"
+                name="productName"
+                placeholder="Product Name (Required)"
+                required
+                formControlName="productName"
+                 class="form-control"  aria-describedby="productName">
+              </div>
+             
+              
+            </div>
+            <div class="formGroup">
+                <label for="type1" class="form-label col-md-2">Type1</label>
+                <input type="radio" class="form-control" formControlName="productType" name="productType" id="type1"/>
+                <label for="type2" class="form-label col-md-2">Type2</label>
+                <input type="radio" class="form-control" formControlName="productType" name="productType" id="type2"/>
+            </div>
+            <div class="mb-3">
+              <label for="productCategory" class="form-label">Product:Categroy</label>
+              <input type="text" class="form-control" id="productCategory">
+              <input type="checkbox" name="subCategory" id="subCategory" class="form-check-input"/>
+              <label for="subCategory" class="form-check-label">This is subCategory</label>
+              
+            </div>
+            <button type="button" class="btn ">Cancel</button>
+            <button type="submit" class="btn btn-primary">Save</button>
+          </form>
+    </div> -->
+
+</div>
+
+</div>
+
+
