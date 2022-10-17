@@ -105,5 +105,8 @@
       }
     }
   },
-  "defaultProject": "angular-product-forms"
+  "defaultProject": "angular-product-forms",
+  "cli": {
+    "analytics": false
+  }
 }
